@@ -5,5 +5,6 @@ RUN docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-di
 RUN docker-php-ext-configure intl
 RUN docker-php-ext-install gd mysqli tidy intl
 RUN a2enmod rewrite
+RUN a2enmod headers
 
 COPY php.ini /usr/local/etc/php/
