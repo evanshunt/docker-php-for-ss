@@ -6,5 +6,6 @@ RUN docker-php-ext-configure intl
 RUN docker-php-ext-install gd mysqli tidy intl ctype dom fileinfo hash mbstring session simplexml tokenizer xml
 RUN a2enmod rewrite
 RUN a2enmod headers
+RUN a2enmod expires
 
 COPY php.ini /usr/local/etc/php/
