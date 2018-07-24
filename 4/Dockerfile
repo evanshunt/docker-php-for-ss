@@ -9,3 +9,4 @@ RUN a2enmod headers
 RUN a2enmod expires
 
 COPY php.ini /usr/local/etc/php/
+COPY server-signature.conf /etc/apache2/conf-enabled/
